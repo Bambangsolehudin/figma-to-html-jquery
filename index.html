@@ -7,7 +7,7 @@
   <title>Power. – Impactful Digital Products</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -26,6 +26,8 @@
         </ul>
       </nav>
 
+      <div></div>
+
       <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,56 +35,55 @@
   </header>
 
   <main>
-
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home">
       <div class="container hero__inner">
         <div class="hero__content">
           <h1 class="hero__title">
-            We Design Impactful<br />
-            Digital <span class="hero__title--highlight">Products</span>
+            We Design Impactful
+            <span class="hero__title-line">Digital <span class="hero__title--highlight">Products</span></span>
           </h1>
           <p class="hero__subtitle">
-            Help find solutions with intuitive and in accordance with client business goals, we provide a high-quality services.
+            Help find solutions with intuitive and in accordance with client business goals. we provide a high-quality services.
           </p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn--primary">Contact Us</a>
-            <button class="btn btn--ghost" id="watchVideoBtn">
+            <button class="btn btn--ghost hero__watch" id="watchVideoBtn">
               <span class="btn__play">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 2L11 7L3 12V2Z" fill="#6C63FF"/>
                 </svg>
               </span>
-              Watch our introduction video
+              <span class="hero__watch-text">Watch our<br />introduction video</span>
             </button>
           </div>
         </div>
 
         <div class="hero__visual">
-          <!-- Floating tool badges -->
-          <div class="hero__badge hero__badge--xd">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="22" height="22" rx="6" fill="#FF2BC2"/>
-              <text x="3" y="16" fill="white" font-size="10" font-weight="bold" font-family="Inter">Xd</text>
+          <div class="hero__badge hero__badge--telegram" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.16 3.75L2.98 10.48C1.81 10.95 1.82 11.61 2.77 11.9L7.18 13.28L17.39 6.83C17.87 6.54 18.3 6.7 17.94 7.02L9.67 14.49H9.67L9.67 14.49L9.37 18.94C9.8 18.94 9.98 18.74 10.22 18.5L12.35 16.43L16.79 19.71C17.61 20.16 18.19 19.93 18.39 18.95L21.33 5.08C21.62 3.88 20.89 3.34 20.16 3.75Z" fill="#FFB21F"/>
             </svg>
           </div>
-          <div class="hero__badge hero__badge--figma">
-            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="22" height="22" rx="6" fill="#1E1E1E"/>
-              <circle cx="11" cy="7" r="3" fill="#FF7262"/>
-              <circle cx="8" cy="11" r="3" fill="#F24E1E"/>
-              <circle cx="14" cy="11" r="3" fill="#A259FF"/>
-              <circle cx="8" cy="15" r="3" fill="#0ACF83"/>
-            </svg>
-          </div>
-          <div class="hero__badge hero__badge--star">⭐</div>
 
-          <!-- Hero image circle -->
+          <div class="hero__badge hero__badge--xd" aria-hidden="true">
+            <span>Xd</span>
+          </div>
+
+          <div class="hero__badge hero__badge--figma" aria-hidden="true">
+            <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="7" height="7" rx="3.5" fill="#F24E1E"/>
+              <rect x="0" y="7" width="7" height="7" rx="3.5" fill="#FF7262"/>
+              <rect x="0" y="14" width="7" height="7" rx="3.5" fill="#A259FF"/>
+              <rect x="7" y="0" width="7" height="7" rx="3.5" fill="#0ACF83"/>
+              <rect x="7" y="7" width="7" height="7" rx="3.5" fill="#1ABCFE"/>
+            </svg>
+          </div>
+
           <div class="hero__img-wrap">
-            <img src="https://picsum.photos/seed/designer/420/480" alt="Digital Product Designer" class="hero__img" />
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=720&q=80" alt="Digital Product Designer" class="hero__img" />
           </div>
 
-          <!-- Employee card -->
           <div class="hero__card">
             <div class="hero__card-avatars">
               <img src="https://picsum.photos/seed/u1/32/32" alt="Employee" class="hero__avatar" />
@@ -91,45 +92,38 @@
               <img src="https://picsum.photos/seed/u4/32/32" alt="Employee" class="hero__avatar" />
             </div>
             <p class="hero__card-label">120+ Employees</p>
-            <p class="hero__card-rating">⭐ 5.0 <span>(5.3k Reviews)</span></p>
+            <p class="hero__card-rating">
+              <span class="hero__star" aria-hidden="true">&#9733;</span> 5.0 <span>(3.1K Reviews)</span>
+            </p>
           </div>
 
-          <!-- Decorative circle -->
-          <div class="hero__deco-circle"></div>
+          <div class="hero__deco-circle" aria-hidden="true"></div>
         </div>
       </div>
     </section>
-
     <!-- ========== TRUSTED SECTION ========== -->
     <section class="trusted" id="about">
       <div class="container">
         <p class="trusted__label">Trusted By Greatest Companies</p>
         <div class="trusted__logos">
-          <div class="trusted__logo-item">
-            <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="20" fill="#5F6368" font-size="20" font-weight="700" font-family="Inter">Google</text>
-            </svg>
+          <div class="trusted__logo-item trusted__logo--google">Google</div>
+
+          <div class="trusted__logo-item trusted__logo--airbnb">
+            <span class="trusted__glyph trusted__glyph--airbnb" aria-hidden="true"></span>
+            <span>airbnb</span>
           </div>
-          <div class="trusted__logo-item">
-            <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="20" fill="#FF5A5F" font-size="16" font-weight="700" font-family="Inter">airbnb</text>
-            </svg>
+
+          <div class="trusted__logo-item trusted__logo--creative">
+            <span class="trusted__creative-main">Creative</span>
+            <span class="trusted__creative-sub">MARKET</span>
           </div>
-          <div class="trusted__logo-item">
-            <svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="20" fill="#6C63FF" font-size="13" font-weight="700" font-family="Inter">Creative Market</text>
-            </svg>
+
+          <div class="trusted__logo-item trusted__logo--shopify">
+            <span class="trusted__glyph trusted__glyph--shopify" aria-hidden="true">S</span>
+            <span>shopify</span>
           </div>
-          <div class="trusted__logo-item">
-            <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="20" fill="#95BF47" font-size="16" font-weight="700" font-family="Inter">shopify</text>
-            </svg>
-          </div>
-          <div class="trusted__logo-item">
-            <svg width="90" height="24" viewBox="0 0 90 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="0" y="20" fill="#FF9900" font-size="18" font-weight="700" font-family="Inter">amazon</text>
-            </svg>
-          </div>
+
+          <div class="trusted__logo-item trusted__logo--amazon">amazon</div>
         </div>
       </div>
     </section>
@@ -138,7 +132,7 @@
     <section class="services" id="services">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-header__title">We Create World-Class Digital Products</h2>
+          <p class="section-header__title">We Create World-Class Digital Products</p>
           <p class="section-header__subtitle">By information about design the world to the best instructions, healio helping by information</p>
         </div>
 
@@ -181,152 +175,74 @@
 
     <!-- ========== TESTIMONIALS SECTION ========== -->
     <section class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-header__title">Let's Hear What They Says</h2>
+      <div class="container testimonials__container">
+        <div class="testimonials__dot-pattern" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
         </div>
 
-        <div class="testimonials__slider">
-          <div class="testimonial-card active" data-slide="0">
-            <div class="testimonial-card__quote">"</div>
-            <p class="testimonial-card__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-            <div class="testimonial-card__author">
-              <img src="https://picsum.photos/seed/nicky/48/48" alt="Nicky Aprilia" class="testimonial-card__avatar" />
-              <div>
-                <p class="testimonial-card__name">Nicky Aprilia</p>
-                <p class="testimonial-card__role">Founder at TechFlow</p>
-              </div>
-            </div>
-          </div>
+        <h2 class="testimonials__title">Let's Hear<br />What They Says</h2>
 
-          <div class="testimonial-card" data-slide="1">
-            <div class="testimonial-card__quote">"</div>
-            <p class="testimonial-card__text">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
-            </p>
-            <div class="testimonial-card__author">
-              <img src="https://picsum.photos/seed/john/48/48" alt="John Doe" class="testimonial-card__avatar" />
-              <div>
-                <p class="testimonial-card__name">John Doe</p>
-                <p class="testimonial-card__role">CEO at StartupX</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card" data-slide="2">
-            <div class="testimonial-card__quote">"</div>
-            <p class="testimonial-card__text">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Amazing team with outstanding results!
-            </p>
-            <div class="testimonial-card__author">
-              <img src="https://picsum.photos/seed/sarah/48/48" alt="Sarah Lee" class="testimonial-card__avatar" />
-              <div>
-                <p class="testimonial-card__name">Sarah Lee</p>
-                <p class="testimonial-card__role">Head of Design, Pixel Co.</p>
-              </div>
-            </div>
-          </div>
+        <div class="testimonials__quote-area">
+          <p class="testimonials__quote-mark">&ldquo;</p>
+          <p class="testimonials__text" id="testimonialText"></p>
         </div>
 
-        <div class="testimonials__dots" id="testimonialDots">
-          <button class="dot dot--active" data-index="0" aria-label="Slide 1"></button>
-          <button class="dot" data-index="1" aria-label="Slide 2"></button>
-          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        <div class="testimonials__profiles" id="testimonialProfiles"></div>
+
+        <div class="testimonials__active-person">
+          <p class="testimonials__name" id="testimonialName"></p>
+          <p class="testimonials__role" id="testimonialRole"></p>
         </div>
       </div>
     </section>
-
     <!-- ========== HOW WE HELP SECTION ========== -->
     <section class="help" id="products">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">How We Can Help You</h2>
-          <p class="section-header__subtitle">Follow our description by design the world to the best instructions, healio helping by information to our best goal and possibility.</p>
+      <div class="container help__container">
+        <div class="help__content">
+          <h2 class="help__title">How We Can Help You</h2>
+          <p class="help__desc">Follow our newsletter. We will regularly update our latest project and availability.</p>
+
+          <form class="help__subscribe" action="#" method="post">
+            <label for="helpEmail" class="sr-only">Email address</label>
+            <div class="help__subscribe-icon" aria-hidden="true">
+              <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.2 1.1H13.8C14.25 1.1 14.6 1.45 14.6 1.9V10.1C14.6 10.55 14.25 10.9 13.8 10.9H1.2C0.75 10.9 0.4 10.55 0.4 10.1V1.9C0.4 1.45 0.75 1.1 1.2 1.1Z" fill="#9CA3C5"/>
+                <path d="M14.2 1.6L7.5 6.5L0.8 1.6" stroke="#F8FAFF" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <input type="email" id="helpEmail" class="help__subscribe-input" placeholder="Enter your email address" />
+            <button type="submit" class="help__subscribe-btn">subscribe</button>
+          </form>
         </div>
 
-        <div class="help__tabs">
-          <button class="help__tab help__tab--active" data-tab="ux">UX/UI Design</button>
-          <button class="help__tab" data-tab="web">Web Development</button>
-          <button class="help__tab" data-tab="mobile">Mobile App</button>
-        </div>
-
-        <div class="help__panels">
-          <div class="help__panel active" id="tab-ux">
-            <div class="help__grid">
-              <div class="help-item">
-                <div class="help-item__icon">🎨</div>
-                <h4 class="help-item__title">App Redesign</h4>
-                <p class="help-item__desc">Improve your existing product's look and feel to increase user retention.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">✏️</div>
-                <h4 class="help-item__title">App Design</h4>
-                <p class="help-item__desc">Build new app designs from scratch tailored to your brand identity.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">🖥️</div>
-                <h4 class="help-item__title">Web Mockup</h4>
-                <p class="help-item__desc">High-fidelity web prototypes that visualize your ideas clearly.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">📐</div>
-                <h4 class="help-item__title">Design System</h4>
-                <p class="help-item__desc">Consistent component libraries to scale your product design efficiently.</p>
-              </div>
+        <div class="help__features">
+          <article class="help-feature">
+            <div class="help-feature__icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="13" height="13" rx="2.5" stroke="#6C63FF" stroke-width="1.4"/>
+                <path d="M4 5H11" stroke="#6C63FF" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M4 7.8H11" stroke="#6C63FF" stroke-width="1.4" stroke-linecap="round"/>
+                <path d="M4 10.5H8.3" stroke="#6C63FF" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
             </div>
-          </div>
+            <h3 class="help-feature__title">UI/UX Design</h3>
+            <p class="help-feature__text">Sometimes features require a short description</p>
+          </article>
 
-          <div class="help__panel" id="tab-web">
-            <div class="help__grid">
-              <div class="help-item">
-                <div class="help-item__icon">💻</div>
-                <h4 class="help-item__title">Frontend Dev</h4>
-                <p class="help-item__desc">Pixel-perfect, performant web interfaces built with modern tech.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">⚙️</div>
-                <h4 class="help-item__title">Backend Dev</h4>
-                <p class="help-item__desc">Robust APIs and server-side solutions tailored to your needs.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">🚀</div>
-                <h4 class="help-item__title">Performance</h4>
-                <p class="help-item__desc">Speed optimization and scalability to handle any traffic load.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">🔒</div>
-                <h4 class="help-item__title">Security</h4>
-                <p class="help-item__desc">Enterprise-grade security practices built into every project.</p>
-              </div>
+          <article class="help-feature">
+            <div class="help-feature__icon" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.2" y="1.2" width="12.6" height="12.6" rx="3" stroke="#6C63FF" stroke-width="1.4"/>
+                <rect x="6.8" y="4.1" width="1.4" height="4.4" rx="0.7" fill="#6C63FF"/>
+                <circle cx="7.5" cy="10.9" r="0.9" fill="#6C63FF"/>
+              </svg>
             </div>
-          </div>
-
-          <div class="help__panel" id="tab-mobile">
-            <div class="help__grid">
-              <div class="help-item">
-                <div class="help-item__icon">📱</div>
-                <h4 class="help-item__title">iOS App</h4>
-                <p class="help-item__desc">Native and cross-platform iOS applications built to delight users.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">🤖</div>
-                <h4 class="help-item__title">Android App</h4>
-                <p class="help-item__desc">Powerful Android apps designed for all screen sizes.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">⚡</div>
-                <h4 class="help-item__title">React Native</h4>
-                <p class="help-item__desc">One codebase, two platforms — fast and cost-effective development.</p>
-              </div>
-              <div class="help-item">
-                <div class="help-item__icon">🧩</div>
-                <h4 class="help-item__title">API Integration</h4>
-                <p class="help-item__desc">Seamless third-party integrations to supercharge your mobile app.</p>
-              </div>
-            </div>
-          </div>
+            <h3 class="help-feature__title">App Design</h3>
+            <p class="help-feature__text">Sometimes features require a short description.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -398,3 +314,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+
