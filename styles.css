@@ -1589,14 +1589,14 @@ button {
     font-size: 24px;
   }
 
-
-
   .hero__watch-text {
     font-size: 22px;
   }
 
   .hero__visual {
-    height: 490px;
+    height: auto;
+    min-height: 420px;
+    padding: 20px 0;
   }
 
   .hero__img-wrap {
@@ -1702,6 +1702,7 @@ button {
 
   .hero__title {
     font-size: 42px;
+    line-height: 1.2;
   }
 
   .hero__title-line {
@@ -1739,6 +1740,7 @@ button {
     margin-top: 20px;
     justify-content: center;
     gap: 18px;
+    flex-wrap: wrap;
   }
 
   .hero__cta {
@@ -1757,57 +1759,65 @@ button {
   }
 
   .hero__visual {
-    height: 460px;
+    height: auto;
+    min-height: 350px;
+    padding: 15px 0;
     order: -1;
   }
 
   .hero__img-wrap {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
+    border-width: 6px;
   }
 
   .hero__deco-circle {
-    width: 68px;
-    height: 68px;
-    right: 42px;
-    bottom: 52px;
+    width: 60px;
+    height: 60px;
+    right: 30px;
+    bottom: 40px;
   }
 
   .hero__card {
-    min-width: 208px;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
+    min-width: 220px;
+    margin-top: 15px;
   }
 
   .hero__card-label {
-    font-size: 24px;
-  }
-
-  .hero__card-rating {
     font-size: 20px;
   }
 
+  .hero__card-rating {
+    font-size: 16px;
+  }
+
   .hero__badge--telegram {
-    top: 12px;
-    left: 56px;
+    width: 42px;
+    height: 42px;
+    top: 15px;
+    left: 40px;
+    display: none;
   }
 
   .hero__badge--xd {
-    width: 60px;
-    height: 60px;
-    top: 64px;
-    left: 92px;
+    width: 52px;
+    height: 52px;
+    top: 55px;
+    left: 75px;
+    display: none;
   }
 
   .hero__badge--xd span {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .hero__badge--figma {
-    width: 70px;
-    height: 70px;
-    right: 36px;
+    width: 64px;
+    height: 64px;
+    right: 32px;
+    display: none;
   }
 
   .trusted__logos {
@@ -1958,12 +1968,104 @@ button {
 }
 
 @media (max-width: 480px) {
+  .footer__tagline{
+    max-width: 10%;
+  }
+
+  .btn--primary {
+    display: block;
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    width: 50%;
+    box-shadow: 0 8px 24px rgba(108, 99, 255, 0.35);
+  }
+
+
   .hero {
-    padding-top: 40px;
+    padding: 40px 0 30px;
+  }
+
+  .hero__inner {
+    gap: 16px;
   }
 
   .hero__title {
-    font-size: 34px;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.85rem;
+  }
+
+  .hero__watch {
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .hero__watch .btn__play {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero__watch-text {
+    font-size: 12px;
+  }
+
+  .hero__visual {
+    height: auto;
+    min-height: 300px;
+    padding: 15px 0;
+  }
+
+  .hero__img-wrap {
+    width: 240px;
+    height: 240px;
+    border-width: 6px;
+  }
+
+  .hero__card {
+    margin-top: 15px;
+    min-width: 180px;
+    padding: 10px 14px 12px;
+  }
+
+  .hero__card-label {
+    font-size: 14px;
+  }
+
+  .hero__card-rating {
+    font-size: 12px;
+  }
+
+  .hero__avatar {
+    width: 28px;
+    height: 28px;
+    margin-left: -7px;
+  }
+
+  .hero__avatar:first-child {
+    margin-left: 0;
+  }
+
+  .hero__deco-circle {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 10px;
   }
 
   .hero__subtitle {
@@ -2084,6 +2186,6 @@ button {
   }
 
   .hero__badge {
-    display: none;
+    display: none !important;
   }
 }
